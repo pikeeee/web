@@ -9,9 +9,12 @@ export default compose(
     withHandlers({
         handleKeyUp: ({ addNew, setValue }) => e => {
             const text = e.target.value.trim();
-
+            const day = new Date();
+            const date = day.getFullYear()+'-'+(day.getMonth()+1)+'-'+day.getDate();
+            const time = day.getHours() + ":" + day.getMinutes() + ":" + day.getSeconds();
+            const time_create = date+' '+time;
             if (e.keyCode === KeyCode.KEY_RETURN && text) {
-                addNew(text);
+                addNew(text, time_create);
                 setValue('');
             }
         },

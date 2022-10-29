@@ -9,16 +9,19 @@ export function getAll() {
         {
             id: 1,
             text: 'Learn Javascript',
+            time_create: 'short_test',
             completed: false
         },
         {
             id: 2,
             text: 'Learn React',
+            time_create: 'short_test',
             completed: false
         },
         {
             id: 3,
             text: 'Build a React App',
+            time_create: 'short_test',
             completed: false
         }
     ]

@@ -2,14 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Navbar() {
         return(
-            <ul>
-                <li>
-                    <Link to="/">Information</Link>
-                </li>
-                <li>
-                <Link to="/test">Todo List App</Link>
-                </li>
-            </ul>
+                <ul className="alo">
+                    <li className="navbar-li"><Link to="/"><a>Information</a></Link></li>
+                    <li className="navbar-li"><Link to="/test"><a>To do List App</a></Link></li>
+                </ul>
         );
 }
 export default Navbar
